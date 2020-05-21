@@ -35,7 +35,7 @@ output$valueBox_confirmed <- renderValueBox({
   valueBox(
     key_figures()$confirmed,
     subtitle = "Confirmed",
-    icon     = icon("ambulance"),
+    icon     = icon("procedures"),
     color    = "red",
     width    = NULL
   )
@@ -46,7 +46,7 @@ output$valueBox_recovered <- renderValueBox({
   valueBox(
     key_figures()$recovered,
     subtitle = "Estimated Recoveries",
-    icon     = icon("hand-holding-heart"),
+    icon     = icon("heart"),
     color    = "olive"
   )
 })
@@ -55,7 +55,7 @@ output$valueBox_deceased <- renderValueBox({
   valueBox(
     key_figures()$deceased,
     subtitle = "Deceased",
-    icon     = icon("heartbeat"),
+    icon     = icon("users"),
     color    = "orange"
   )
 })
@@ -64,7 +64,7 @@ output$valueBox_countries <- renderValueBox({
   valueBox(
     key_figures()$countries,
     subtitle = "Affected Countries",
-    icon     = icon("globe"),
+    icon     = icon("globe-asia"),
     color    = "teal"
   )
 })
